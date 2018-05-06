@@ -1,0 +1,43 @@
+*
+	box-sizing: border-box
+	color: #fff
+body
+	font-family: Pangolin, sans-serif
+.slider
+	display: flex
+	justify-content: center
+	align-items: center
+	.item
+		display: flex
+		justify-content: center
+		align-items: center
+		background-color: #aeaeae
+		flex-basis: 25%
+		border: 1px solid lightblue
+		height: 100vh
+		transition: all 0.5s
+		&:hover
+			flex-basis: 50%
+		&-1
+			background: url(../img/img-1.jpg) no-repeat center center
+			background-size: cover
+		&-2
+			background: url(../img/img-2.jpg) no-repeat center center
+			background-size: cover
+		&-3
+			background: url(../img/img-3.jpg) no-repeat center center
+			background-size: cover
+		&-4
+			background: url(../img/img-4.jpg) no-repeat center center
+			background-size: cover	
+span
+	font-size: 30px
+	text-shadow: 0 0 10px #000
+@media screen and (max-width: 640px)
+	.slider
+		flex-flow: column
+		height: 100vh
+	.item
+		width: 100%
+		&:hover
+			flex-grow: 90%
