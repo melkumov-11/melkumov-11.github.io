@@ -1,0 +1,90 @@
+*
+	padding: 0
+	margin: 0
+	box-sizing: border-box
+
+/*псевдораспорка*/
+.clearfix
+	content: ''
+	display: table
+	clear: both
+.cutaway
+	width: 1920px
+	height: 780px
+	background-image: url(../img/bgimg.jpg)
+	&-text
+		float: left
+		margin-top: 189px
+		margin-left: 390px
+		&__title
+			margin-bottom: 30px
+			color: #7c6db0
+			font:
+				family: "Roboto Slab"
+				size: 60px
+				weight: 700
+		&__city
+			background-color: #7f70b1
+			padding: 17px 21px
+			display: inline-block
+			color: #ffffff
+			margin-left: 1px
+			font:
+				family: "Roboto Slab"
+				size: 36px
+				weight: 700
+			margin-bottom: 94px
+		&__advantage
+			margin-bottom: 118px
+			&-icon
+				vertical-align: middle
+				margin-left: 8px
+			&-text
+				color: #000000
+				font-family: Roboto, sans-serif
+				font-size: 22px
+				font-weight: 300
+				vertical-align: center
+				display: inline-block
+				margin-left: 39px
+				vertical-align: middle
+	&-img
+		float: left
+		margin-top: 30px
+		margin-left: 60px
+.button
+	text-decoration: none
+	padding: 30px 55px
+	box-shadow: 0 2px 16px rgba(0, 215, 255, 0.44)
+	background: #01b3e0
+	color: #ffffff
+	font:
+		family: "Roboto Slab"
+		size: 22px
+		weight: 700
+	margin-right: 30px
+	&:hover
+		background-color: #10a099
+		transition: all 0.5s ease
+	&-o
+		background: transparent
+		color: #01b3e0
+		border: 2px solid #1eb8b0
+		&:hover
+			color: #ffffff
+			background: #01b3e0
+@media screen and (max-width:576px)
+	.cutaway
+		width: 100%
+		&-img
+			display: none
+		&-text
+			margin: 80px auto
+			text-align: center
+	.button
+		display: block
+		text-align: center
+		width: 80%
+		margin: 0 auto
+		&-o
+			margin-top: 20px
