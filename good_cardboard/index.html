@@ -19,6 +19,10 @@
 		<!-- Анимация -->
 		<link rel="stylesheet" href="css/animate.css">
 
+		<!-- Slick Slider -->
+		<link rel="stylesheet" href="slick/slick.css">
+		<link rel="stylesheet" href="slick/slick-theme.css">
+
 		<!-- Custom styles for this template -->
 		<link href="css/style.css" rel="stylesheet">
 		
@@ -102,8 +106,8 @@
 									<span class="form-title__important">Образцы упаковки бесплатно!</span>
 								</div>
 								<!-- /.form-title -->
-								<form action="#" class="form">
-									<input class="form-input" type="tel" placeholder="Введите номер телефона">
+								<form action="mailer/smart.php" method="post" class="form">
+									<input class="form-input" type="tel" name="user_phone" placeholder="Введите номер телефона">
 									<button class="button button_big" type="submit">Оставить заявку!</button>
 								</form>
 								<small class="form-small">*Минимальный заказ 500шт</small>
@@ -430,6 +434,7 @@
 			<div id="map" class="map"></div>
 			<div class="contacts-block">
 				<div class="contacts-block__address contacts-block__text">
+					<i class="fas fa-map-marker-alt"></i>
 					<span class="contacts-block__title">Адрес офиса</span>
 					г. Уфа, Проспект октября, 46
 					<span class="contacts-block__title">Адрес склада</span>
@@ -437,6 +442,7 @@
 				</div>
 				<!-- /.contacts-block__address -->
 				<div class="contacts-block__phone contacts-block__text">
+					<i class="fas fa-mobile-alt"></i>
 					<span class="contacts-block__title">Тел. отдела продаж:</span>
 					8 (347) 271-54-28<br>
 					8 (937) 363-30-00
@@ -447,6 +453,7 @@
 				</div>
 				<!-- /.contacts-block__cta -->
 				<div class="contacts-block__mail contacts-block__text">
+					<i class="fas fa-envelope"></i>
 					<span class="contacts-block__title">Е-mail</span>
 					urals.karton@gmail.com
 				</div>
@@ -455,10 +462,16 @@
 			<!-- /.contacts-block -->
 		</section>
 		<!-- /.contacts -->
-		<!-- Bootstrap core JavaScript ================================================== -->
+
+		<footer class="footer">
+			<div>&copy;&nbsp;www.gofra-ural.ru 2016, все права защищены</div><br>
+			<div class="author">Сайт разработал <a href="https://vk.com/melkumov_11">Артур Мелкумов</a></div>
+		</footer>
+
 		<!-- Placed at the end of the document so the pages load faster -->
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 		<script>window.jQuery || document.write('<script src="js/jquery-3.2.1.slim.min.js"><\/script>')</script>
+		<script type="text/javascript" src="slick/slick.min.js"></script>
 		
 		<script>
 			

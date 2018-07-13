@@ -677,10 +677,17 @@ a {
   top: 10%;
   background-color: #fff;
   padding: 33px 34px 39px 62px;
+  border-radius: 10px;
 }
 
 .contacts-block__text {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+}
+
+.contacts-block__text .fas {
+  position: absolute;
+  left: 38px;
+  font-size: 20px;
 }
 
 .contacts-block__title {
@@ -694,4 +701,25 @@ a {
 .map {
   width: 100%;
   height: 550px;
+}
+
+.footer {
+  background-color: #1b1b1b;
+  padding-top: 36px;
+  padding-bottom: 39px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.footer div {
+  opacity: 0.5;
+}
+
+.footer .author a {
+  opacity: 1.0;
+  text-decoration: none;
+  color: red;
+  font-weight: 900;
 }
