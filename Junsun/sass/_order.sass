@@ -1,0 +1,64 @@
+.order
+	padding-top: 116px
+	margin-bottom: 129px
+	display: flex
+	align-items: center
+	&-img
+		img
+			width: 100%
+	&-form
+		display: flex
+		background: #008e9d
+		padding: 73px 120px 72px 71px
+		width: 100%
+		position: relative
+		&__client
+			&__title
+				color: #fbfcfc
+				font-family: "Roboto Slab"
+				font-size: 45px
+				letter-spacing: 0.23px
+				margin-bottom: 42px
+		&__img
+			position: absolute
+			right: 40px
+			top: calc(50% - 100px)
+			img
+				width: 100%
+	form
+		input, textarea
+			display: block
+			width: 100%
+			background-color: #fbfcfc
+			color: #696b6b
+			font-size: 20px
+			letter-spacing: 0.1px
+			padding: 22px 30px
+			border-radius: 5px
+			&::placeholder
+				color: #696b6b
+				font-size: 20px
+				letter-spacing: 0.1px
+		input
+			margin-bottom: 29px
+			&[type='submit']
+				color: #696b6b
+				text-transform: uppercase
+				font-family: Roboto
+				font-size: 19px
+				font-weight: 500
+				letter-spacing: 0.1px
+				background-color: #ffe304
+				box-shadow: darken(#ffe304, 15%) 0px 3px
+				transition: 0.3s
+				&:hover
+					background-color: #fdf088
+					transition: 0.3s
+				&:active
+					position: relative
+					top: 3px
+					background: darken(#ffe304, 7%)
+					box-shadow: none
+		textarea
+			margin-bottom: 63px
+			min-height: 152px
