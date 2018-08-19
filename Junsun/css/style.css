@@ -471,6 +471,7 @@ ul {
 
 .feedback .arr {
   position: absolute;
+  cursor: pointer;
 }
 
 .feedback .arr-l {
@@ -583,6 +584,7 @@ ul {
   padding: 73px 120px 72px 71px;
   width: 100%;
   position: relative;
+  border-radius: 5px 0 0 5px;
 }
 
 .order-form__client__title {
@@ -659,6 +661,7 @@ ul {
   box-shadow: #b7a200 0px 3px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .order form input[type='submit']:hover {

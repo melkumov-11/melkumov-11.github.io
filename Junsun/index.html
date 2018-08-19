@@ -39,9 +39,9 @@
 						<nav>
 							<ul class="header-menu">
 								<li><a href="#">Главная</a></li>
-								<li><a href="#">Преимущества</a></li>
-								<li><a href="#">Характеристики</a></li>
-								<li><a href="#">Контакты</a></li>
+								<li><a href="#advantages">Преимущества</a></li>
+								<li><a href="#characteristics">Характеристики</a></li>
+								<li><a href="#feedback">Отзывы</a></li>
 							</ul>
 							<!-- /.header-menu -->
 						</nav>
@@ -109,7 +109,7 @@
 		
 		<main>
 			<div class="container">
-				<section class="advantages">
+				<section class="advantages" id="advantages">
 					<h2 class="section-title first-title">Преимущества навигатора<br><span>JUNSUN А7</span></h2>
 					<!-- /.section-title -->
 					<div class="advantages-block">
@@ -174,7 +174,7 @@
 			</div>
 			<!-- /.container -->
 			
-			<section class="characteristics">
+			<section class="characteristics" id="characteristics">
 				<h2 class="section-title">Характеристики товара</h2>
 				<!-- /.section-title -->
 				<div class="row">
@@ -288,7 +288,7 @@
 			</section>
 			<!-- /.os -->
 			
-			<section class="feedback">
+			<section class="feedback" id="feedback">
 				<div class="container">
 					<h2 class="section-title">Отзывы покупателей</h2>
 					<!-- /.section-title -->
@@ -491,15 +491,25 @@
 			<!-- /.footer-contacts -->
 		</footer>
 		
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="js/jquery-3.3.1.min.js"><\/script>')</script>
-		<script type="text/javascript" src="slick/slick.min.js"></script>
+		<script src="slick/slick.min.js"></script>
 		<script src="js/slider.js"></script>
 		<script src="js/jquery.mask.min.js"></script>
 		<script>
 			$(function(){
 				$('#tel').mask('8(000)000-00-00', {
 					clearIfNotMatch: true
+				});
+			});
+		</script>
+		
+		<script>
+			$(function(){
+				$("a[href^='#']").click(function(){
+					var _href = $(this).attr("href");
+					$("html, body").animate({scrollTop: $(_href).offset().top+"px"}, 3000);
+					return false;
 				});
 			});
 		</script>
