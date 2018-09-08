@@ -72,13 +72,17 @@ ul {
 }
 
 .header-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
+  text-align: center;
   list-style-type: none;
   margin-left: 4%;
+}
+
+.header-menu li {
+  display: inline-block;
+}
+
+.header-menu li:not(last-child) {
+  margin-right: 10px;
 }
 
 .header-menu a {
@@ -197,6 +201,7 @@ ul {
 }
 
 .header-advantage__block {
+  max-width: 100%;
   width: 1170px;
   height: 241px;
   border: 3px solid #158c9b;
@@ -249,6 +254,10 @@ ul {
   margin-bottom: 27px;
 }
 
+.header-advantage__block2 .advantage-block .a-img img {
+  max-width: 100%;
+}
+
 .advantages .section-title span {
   display: inline-block;
   color: #10416a;
@@ -263,6 +272,10 @@ ul {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.advantages-block img {
+  max-width: 100%;
 }
 
 .advantages-block__descr {
@@ -405,6 +418,10 @@ ul {
 
 .os-block__descr__block__img {
   margin-right: 34px;
+}
+
+.os-block__descr__block__img img {
+  max-width: 100%;
 }
 
 .os-block__descr__block__title {
@@ -747,4 +764,317 @@ ul {
 .footer-contacts .email,
 .footer-author .email {
   color: #696b6b;
+}
+
+@media screen and (max-width: 1275px) {
+  .header-button {
+    margin-left: -20%;
+  }
+}
+
+@media screen and (max-width: 1110px) {
+  .header-button {
+    width: 192px;
+    height: 51px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header-menu li {
+    margin-right: -20px;
+  }
+}
+
+.menu-toogle {
+  display: none;
+  cursor: pointer;
+  color: #f9fbfb;
+  font-size: 20px;
+  font-weight: 500;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin-bottom: 5px;
+}
+
+.menu-toogle:hover {
+  color: yellow;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 1025px) {
+  .header-menu {
+    position: absolute;
+    margin-left: calc(50% - 103px);
+    display: none;
+    z-index: 2;
+  }
+
+  .header-menu li {
+    display: block;
+    padding: 5px 10px;
+    background-color: #18BDFF;
+    border-radius: 5px;
+  }
+
+  .header-menu li:not(last-child) {
+    margin-bottom: 5px;
+  }
+
+  .menu-toogle {
+    display: block;
+    text-align: center;
+  }
+
+  .header-button {
+    margin-left: -50%;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .header-button {
+    margin-left: -100px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header-button {
+    margin-left: -130px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .header-button {
+    display: none;
+  }
+
+  .menu-toogle {
+    text-align: right;
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .menu-toogle {
+    margin-right: -50px;
+  }
+}
+
+@media screen and (max-width: 539px) {
+  .menu-toogle {
+    display: none;
+  }
+
+  .advantages-block__descr__title {
+    font-size: 20px;
+  }
+
+  .advantages-block__descr__text {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .header-button_ylw {
+    margin-left: calc(50% - 215px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .header-title {
+    font-size: 55px;
+  }
+
+  .header-title span {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .advantages-block__descr__title {
+    text-align: center;
+  }
+
+  .advantages-block__descr {
+    min-width: 430px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .advantages-block__img {
+    display: none;
+  }
+
+  .advantages-block__descr {
+    left: 0;
+  }
+
+  .advantages-block__descr1 {
+    padding-right: 20px;
+  }
+
+  .advantages-block__descr2 {
+    padding-right: 16px;
+  }
+
+  .advantages-block__descr3 {
+    padding-right: 5px;
+  }
+
+  .advantages-block {
+    margin-top: 20px;
+  }
+
+  .section-title {
+    font-size: 30px;
+  }
+
+  .tale-title {
+    font-size: 35px;
+  }
+
+  .picking-block__title {
+    font-size: 16px;
+  }
+
+  .picking {
+    padding-top: 80px;
+  }
+}
+
+@media screen and (max-width: 1268px) {
+  .characteristics-tablet {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 709px) {
+  .os-block__img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .tale {
+    padding-bottom: 118px;
+  }
+
+  .picking-blocks {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+
+  .picking-block {
+    -ms-flex-preferred-size: 35%;
+    flex-basis: 35%;
+  }
+
+  .picking-block:nth-child(1),
+  .picking-block:nth-child(2) {
+    margin-bottom: 30px;
+  }
+
+  .picking-block__img {
+    margin-bottom: 15px;
+  }
+
+  .picking-block__img img {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 1285px) {
+  .order-form__img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 785px) {
+  .order-form form input::-webkit-input-placeholder,
+  .order-form form textarea::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+
+  .order-form form input:-ms-input-placeholder,
+  .order-form form textarea:-ms-input-placeholder {
+    font-size: 16px;
+  }
+
+  .order-form form input::-ms-input-placeholder,
+  .order-form form textarea::-ms-input-placeholder {
+    font-size: 16px;
+  }
+
+  .order-form form input::placeholder,
+  .order-form form textarea::placeholder {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .order-img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  footer div,
+  .footer-author {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .arr {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .advantages-block__descr {
+    margin: 0 auto;
+  }
+
+  .header-advantage {
+    left: 6px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .header-title {
+    text-align: center;
+    font-size: 32px;
+  }
+
+  .header-title span {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header-advantage__block2 .advantage-block .a-text {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .advantages-block__descr {
+    min-width: auto;
+  }
+}
+
+@media screen and (max-width: 914px) {
+  .characteristics-gear {
+    display: none;
+  }
 }
