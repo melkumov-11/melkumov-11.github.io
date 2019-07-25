@@ -98,6 +98,10 @@ a {
   margin-bottom: 5px;
 }
 
+.header-contacts__mail {
+  font-size: 0.85em;
+}
+
 .main-bg {
   padding: 15% 10%;
   background: #373737 url('../img/main-bg.jpg') 0 0 no-repeat;
@@ -132,7 +136,7 @@ a {
   z-index: 10;
   position: relative;
   text-align: center;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 
 .main-bg__cta {
