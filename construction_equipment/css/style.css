@@ -49,11 +49,16 @@ a {
   display: flex;
 }
 
+.header-menu li:not(:last-child) {
+  margin-right: 0.5em;
+}
+
 .header-menu__item {
   padding: 10px 0.5em;
   color: #fff;
-  font-size: 1.25em;
+  font-size: 1em;
   font-weight: bold;
+  text-transform: uppercase;
   transition: all 0.3s;
 }
 
@@ -71,37 +76,30 @@ a {
 }
 
 .header-contacts {
-  background-color: #000;
   text-align: center;
-  padding: 15px 1em;
-  border-radius: 35px;
 }
 
-.header-contacts__tel {
-  margin-bottom: 5px;
-}
-
-.header-contacts__tel_item {
+.header-contacts__item {
   color: #fff;
   font-weight: bold;
+  display: block;
   transition: all 0.3s;
 }
 
-.header-contacts__tel_item:hover {
+.header-contacts__item:hover {
   color: #ffb700;
   transition: all 0.3s;
 }
 
+.header-contacts__tel {
+  padding: 15px 1em;
+  background-color: #000;
+  border-radius: 35px;
+  margin-bottom: 5px;
+}
+
 .main-bg {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  justify-content: center;
-  -ms-align-items: center;
-  align-items: center;
-  padding: 10% 10%;
+  padding: 15% 10%;
   background: #373737 url('../img/main-bg.jpg') 0 0 no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
@@ -115,22 +113,45 @@ a {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
-}
-
-.main-bg__img {
-  position: relative;
-  z-index: 10;
-}
-
-.main-bg__img img {
-  max-width: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 .main-bg__title {
-  font-size: 2em;
+  font-size: 3em;
+  color: #ffb700;
+  text-shadow: 1px 1px 3px #000;
   text-align: center;
-  color: #fff;
   position: relative;
   z-index: 10;
+  margin-bottom: 30px;
+}
+
+.main-bg__subtitle {
+  font-size: 1.5em;
+  color: #f5f5f5;
+  z-index: 10;
+  position: relative;
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+.main-bg__cta {
+  text-align: center;
+}
+
+.main-bg__cta a {
+  padding: 15px 1em;
+  color: #202020;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  position: relative;
+  z-index: 10;
+  background-color: #ffb700;
+  border-radius: 5px;
+}
+
+.main-bg__cta a:hover {
+  background-color: #ffc42f;
 }
