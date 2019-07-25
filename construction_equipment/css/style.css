@@ -98,12 +98,15 @@ a {
   margin-bottom: 5px;
 }
 
+<<<<<<< HEAD
 .header-contacts__mail {
   font-size: 0.85em;
   text-align: right;
   padding-right: 1em;
 }
 
+=======
+>>>>>>> parent of b815457... мелкие доработки
 .main-bg {
   padding: 15% 10%;
   background: #373737 url('../img/main-bg.jpg') 0 0 no-repeat;
@@ -138,7 +141,7 @@ a {
   z-index: 10;
   position: relative;
   text-align: center;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
 }
 
 .main-bg__cta {
