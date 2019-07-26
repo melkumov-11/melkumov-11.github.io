@@ -159,3 +159,42 @@ a {
 .main-bg__cta a:hover {
   background-color: #ffc42f;
 }
+
+.main-adventures {
+  background-color: #fff;
+  padding: 5% 10%;
+  position: relative;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-adventures__block {
+  text-align: center;
+}
+
+.main-adventures__block_img {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.main-adventures__block_img img {
+  max-width: 100%;
+}
+
+.main-adventures__block_title {
+  color: #202020;
+  font-size: 1.4em;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.main-adventures__block_descr {
+  font-size: 1.1em;
+  max-width: 250px;
+}
