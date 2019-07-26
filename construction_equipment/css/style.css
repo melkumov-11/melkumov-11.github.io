@@ -5,6 +5,9 @@ body, ul, h1, h2 {
 
 body {
   font-family: 'Roboto', 'Arial', sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 ul {
@@ -204,7 +207,7 @@ a {
 }
 
 .main-product {
-  padding: 0 15%;
+  padding: 5% 15%;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -212,6 +215,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: #f2f2f2;
 }
 
 .main-product__block {
@@ -225,6 +229,24 @@ a {
 
 .main-product__block:last-child {
   margin-top: 3%;
+}
+
+.main-product__block:hover .main-product__block_img::before {
+  background-image: linear-gradient(top, rgba(15,15,15,0.30), rgba(0,0,0,0.20));
+  background-image: -moz-linear-gradient(top, rgba(15,15,15,0.30), rgba(0,0,0,0.20));
+  background-image: -webkit-linear-gradient(top, rgba(15,15,15,0.30), rgba(0,0,0,0.20));
+  background-image: -o-linear-gradient(top, rgba(15,15,15,0.30), rgba(0,0,0,0.20));
+  background-image: -ms-linear-gradient(top, rgba(15,15,15,0.30), rgba(0,0,0,0.20));
+}
+
+.main-product__block:hover .main-product__block_title {
+  top: 30%;
+  transition: all 0.3s;
+}
+
+.main-product__block:hover .main-product__block_btn {
+  opacity: 1;
+  top: 50%;
 }
 
 .main-product__block_img img {
@@ -242,8 +264,35 @@ a {
   top: 0;
   width: 100%;
   height: 100%;
+  background-image: linear-gradient(top, rgba(15,15,15,0.50), rgba(0,0,0,0.40));
   background-image: -moz-linear-gradient(top, rgba(15,15,15,0.50), rgba(0,0,0,0.40));
   background-image: -webkit-linear-gradient(top, rgba(15,15,15,0.50), rgba(0,0,0,0.40));
   background-image: -o-linear-gradient(top, rgba(15,15,15,0.50), rgba(0,0,0,0.40));
   background-image: -ms-linear-gradient(top, rgba(15,15,15,0.50), rgba(0,0,0,0.40));
+}
+
+.main-product__block_title {
+  position: absolute;
+  color: #ffb700;
+  text-shadow: 1px 1px 3px #000;
+  text-transform: uppercase;
+  text-align: center;
+  top: 40%;
+  left: 13%;
+  transition: all 0.3s;
+}
+
+.main-product__block_btn {
+  position: absolute;
+  top: 45%;
+  left: 40%;
+  border: 1px solid #ffb700;
+  border-radius: 20px;
+  padding: 10px 0.5em;
+  background: #ffb700;
+  color: #202020;
+  font-weight: bold;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: all 0.3s;
 }
