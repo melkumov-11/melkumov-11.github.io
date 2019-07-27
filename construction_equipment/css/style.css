@@ -470,6 +470,10 @@ a {
 
 .main-components__title {
   text-align: center;
+  font-size: 1.7em;
+  padding-bottom: 5%;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .main-components__block {
@@ -481,8 +485,22 @@ a {
   justify-content: space-between;
 }
 
+.main-components__block:not(:last-child) {
+  margin-bottom: 3%;
+}
+
 .main-components__block .block-text__title {
-  
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.main-components__block .block-text, .main-components__block .block-img {
+  flex-basis: 49%;
+}
+
+.main-components__block .block-text__descr {
+  line-height: 1.7;
 }
 
 .main-components__block .block-text__descr_bold {
@@ -490,5 +508,35 @@ a {
 }
 
 .main-components__block .block-img img {
+  max-width: 100%;
+}
+
+/*Раздел "Навесное оборудование"*/
+.main-descr {
+  padding: 3% 15%;
+}
+
+.main-descr__title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  margin-bottom: 3%;
+}
+
+.main-descr__text {
+  column-count: 3;
+  list-style-position: inside;
+  font-size: 1.2em;
+}
+
+.main-descr__text li::before {
+  content: '\2022';
+  font-size: 1.5em;
+  padding-right: 5px;
+  vertical-align: middle;
+}
+
+.main-assortment__sl .sl-slide img {
   max-width: 100%;
 }
