@@ -21,4 +21,9 @@ $(function() {
     centerMode: true,
     focusOnSelect: true
   });
+  
+  $('.header-menu__hamburger').click(function(e) {
+    e.preventDefault;
+    this.toggleClass('header-menu__hamburger_active');
+  });
 });
