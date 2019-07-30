@@ -9,4 +9,11 @@ $(function() {
     e.preventDefault;
     this.toggleClass('header-menu__hamburger_active');
   });
+  
+  $('.to_offer').on('click', function() {
+    $('.modal').show(300);
+  });
+  $('.modal-close').on('click', function() {
+    $('.modal').hide(300);
+  });
 });
