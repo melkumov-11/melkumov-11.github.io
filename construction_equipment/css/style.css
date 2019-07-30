@@ -776,6 +776,8 @@ a {
 
 .main-assortment__sl .sl-slide img {
   max-width: 100%;
+  margin: 0 auto 3% auto;
+  cursor: pointer;
 }
 
 .main-bgtelehandler .main-bg__title {
