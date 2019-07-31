@@ -11,18 +11,22 @@ $(function() {
   });
   
   $('.to_offer').on('click', function() {
-    $('.main-bg__title').css('z-index', 'auto');
+//    $('.main-bg__title').css('z-index', 'auto');
     $('.modal').show(300);
   });
   $('.to_complectation').on('click', function() {
     $('.complectation').show(300);
   });
+  $('.main-descr__button').on('click', function() {
+    $('.modalSelect').show(300);
+  });
   $('#modal-close').on('click', function() {
-    $('.modal').hide(300, function() {
-      $('.main-bg__title, .main-bg__cta a').css('z-index', 'auto');
-    });
+    $('.modal').hide(300);
   });
   $('#complectation-close').on('click', function() {
     $('.complectation').hide(300);
+  });
+  $('#modalSelect-close').on('click', function() {
+    $('.modalSelect').hide(300);
   });
 });
