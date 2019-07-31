@@ -14,9 +14,15 @@ $(function() {
     $('.main-bg__title').css('z-index', 'auto');
     $('.modal').show(300);
   });
-  $('.modal-close').on('click', function() {
+  $('.to_complectation').on('click', function() {
+    $('.complectation').show(300);
+  });
+  $('#modal-close').on('click', function() {
     $('.modal').hide(300, function() {
       $('.main-bg__title, .main-bg__cta a').css('z-index', 'auto');
     });
+  });
+  $('#complectation-close').on('click', function() {
+    $('.complectation').hide(300);
   });
 });

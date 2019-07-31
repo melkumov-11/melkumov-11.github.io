@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Компания ВекТех - поставка строительной техники и навесного оборудования для строительного, дорожно-строительного, складского и сельскохозяйственного комплекса</title>
+  <link rel="shortcut icon" href="img/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -47,7 +48,7 @@
           </ul>
           <div class="content-block__buttons">
             <span class="content-block__buttons_call to_offer">Получить предложение</span>
-            <span class="content-block__buttons_picking">Комплектация</span>
+            <span class="content-block__buttons_picking to_complectation">Комплектация</span>
           </div>
         </a>
         <a href="javascript:void(0);" class="content-block">
@@ -59,7 +60,7 @@
           </ul>
           <div class="content-block__buttons">
             <span class="content-block__buttons_call to_offer">Получить предложение</span>
-            <span class="content-block__buttons_picking">Комплектация</span>
+            <span class="content-block__buttons_picking to_complectation">Комплектация</span>
           </div>
         </a>
         <a href="javascript:void(0);" class="content-block">
@@ -71,7 +72,7 @@
           </ul>
           <div class="content-block__buttons">
             <span class="content-block__buttons_call to_offer">Получить предложение</span>
-            <span class="content-block__buttons_picking">Комплектация</span>
+            <span class="content-block__buttons_picking to_complectation">Комплектация</span>
           </div>
         </a>
         <a href="javascript:void(0);" class="content-block">
@@ -85,7 +86,7 @@
           </ul>
           <div class="content-block__buttons">
             <span class="content-block__buttons_call to_offer">Получить предложение</span>
-            <span class="content-block__buttons_picking">Комплектация</span>
+            <span class="content-block__buttons_picking to_complectation">Комплектация</span>
           </div>
         </a>
         <a href="javascript:void(0);" class="content-block">
@@ -99,7 +100,7 @@
           </ul>
           <div class="content-block__buttons">
             <span class="content-block__buttons_call to_offer">Получить предложение</span>
-            <span class="content-block__buttons_picking">Комплектация</span>
+            <span class="content-block__buttons_picking to_complectation">Комплектация</span>
           </div>
         </a>
         <a href="javascript:void(0);" class="content-block">
@@ -113,7 +114,7 @@
           </ul>
           <div class="content-block__buttons">
             <span class="content-block__buttons_call to_offer">Получить предложение</span>
-            <span class="content-block__buttons_picking">Комплектация</span>
+            <span class="content-block__buttons_picking to_complectation">Комплектация</span>
           </div>
         </a>
       </div>
@@ -172,11 +173,13 @@
         </ul>
       </nav>
       <div class="footer-logo">
-        <img src="img/logo.png" alt="ВекТех">
+        <a href="index.html">
+          <img src="img/logo.png" alt="ВекТех">
+        </a>
       </div>
       <div class="footer-info">
         <div class="footer-info__item footer-info__organization">© ООО "ВекТех", ОГРН 1182375096694</div>
-        <div class="footer-info__item footer-info__address">350000, г. Краснодар, п. Российский, ул. Ратной Славы, д. 41</div>
+        <div class="footer-info__item footer-info__address">350000, г. Краснодар, ул. Российская, д. 347/1</div>
         <div class="footer-info__item footer-info__tel">Телефон: <a href="tel:+79180849428">8 (918) 0849428</a></div>
         <div class="footer-info__item footer-info__email">E-mail: <a href="mailto:mst-krd@mail.ru">mst-krd@mail.ru</a></div>
       </div>
@@ -195,10 +198,36 @@
       </div>
     </div>
   </div>
+<!--
+  <div class="complectation">
+    <div class="overlay">
+      <div class="complectation-block"> 
+        <div class="modal-close" id="complectation-close"><img src="img/close.png" alt=""></div>
+        <div class="complectation-block__img"><img src="img/m542.jpg" alt=""></div>
+        <div class="complectation-block__text">
+          <div class="complectation-block__text_title">Экскаватор-погрузчик<br>MST M542</div>
+          <div class="complectation-block__text_button modal-form__submit"><a href="javascript:void(0);" class="to_offer">Заказать комплектацию</a></div>
+          <ul class="complectation-block__text_descr">
+            <li>Преимущество1</li>
+            <li>Преимущество2</li>
+            <li>Преимущество3</li>
+            <li>Преимущество4</li>
+            <li>Преимущество5</li>
+            <li>Преимущество6</li>
+            <li>Преимущество7</li>
+            <li>Преимущество8</li>
+            <li>Преимущество9</li>
+            <li>Преимущество10</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+-->
   <div class="modal">
     <div class="overlay">
       <div class="modal-form">
-        <div class="modal-close"><img src="img/close.png" alt=""></div>
+        <div class="modal-close" id="modal-close"><img src="img/close.png" alt=""></div>
         <form method="post" action="#">
           <input type="text" name="name" class="modal-form__input" placeholder="Ваше имя" required>
           <input type="tel" name="phone" class="modal-form__input" placeholder="Ваш телефон" required>
