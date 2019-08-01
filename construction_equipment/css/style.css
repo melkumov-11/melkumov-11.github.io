@@ -363,6 +363,25 @@ option:checked {
   background: #373737 url('../img/main-bg.jpg') 0 0 no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
+  transition: 3s;
+}
+
+.main-bg-slide1 {
+  background: #373737 url('../img/main-bg.jpg') 0 0 no-repeat;
+  background-size: cover;
+  transition: 5s;
+} 
+
+.main-bg-slide2 {
+  background: #373737 url('../img/main-bg2.jpg') 0 0 no-repeat;
+  background-size: cover;
+  transition: 5s;
+}
+
+.main-bg-slide3 {
+  background: #373737 url('../img/main-bg3.jpg') 0 0 no-repeat;
+  background-size: cover;
+  transition: 5s;
 }
 
 .main-bg::before {
