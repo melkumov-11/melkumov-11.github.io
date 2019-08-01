@@ -997,6 +997,7 @@ option:checked {
 
 .main-contacts__info_block {
   margin-bottom: 15px;
+  text-align: center;
 }
 
 .main-contacts__info_block .tel-name {
